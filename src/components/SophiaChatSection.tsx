@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { Bot, Send, User } from 'lucide-react';
-import { useState, useEffect } from 'react';
+// import { useState } from 'react';
 import sophiaAvatar from '../assets/sophia-avatar.jpg';
 
 export default function SophiaChatSection() {
-    const [messages, setMessages] = useState([
-        { type: 'user', text: "Tenho um paciente com zumbido pulsátil e cervicalgia. Por onde começo?" },
-        { type: 'ai', text: "Comece descartando causas vasculares para o zumbido pulsátil. Se a audiometria for normal, avalie a musculatura SCM e Masseter, pois pontos-gatilho podem mimetizar esse sintoma. No módulo de Zumbido Somático, aula 4, detalho esse diagnóstico diferencial." }
-    ]);
+    // const [messages, setMessages] = useState([
+    //     { type: 'user', text: "Tenho um paciente com zumbido pulsátil e cervicalgia. Por onde começo?" },
+    //     { type: 'ai', text: "Comece descartando causas vasculares para o zumbido pulsátil. Se a audiometria for normal, avalie a musculatura SCM e Masseter, pois pontos-gatilho podem mimetizar esse sintoma. No módulo de Zumbido Somático, aula 4, detalho esse diagnóstico diferencial." }
+    // ]);
 
     return (
         <section id="sophia" className="py-24 px-6 bg-[#050505] relative overflow-hidden">

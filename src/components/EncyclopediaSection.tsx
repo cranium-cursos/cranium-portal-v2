@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Play, RotateCcw, Award, Users, Layers, Layout } from 'lucide-react';
+import { RotateCcw, Award, Users, Layout } from 'lucide-react';
 
 // Old course images removed
 // import cefaleiaImg from '../assets/courses/guia-cefaleia.jpg';
