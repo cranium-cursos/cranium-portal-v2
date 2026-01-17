@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(16, 193, 180, 0.8), 0 0 20px rgba(16, 193, 180, 0.4);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 10px rgba(16, 193, 180, 0.5), inset 0 0 10px rgba(16, 193, 180, 0.2);
+  }
+}
