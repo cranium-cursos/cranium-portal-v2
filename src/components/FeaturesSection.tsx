@@ -4,7 +4,7 @@ import { GraduationCap, PlayCircle, Bot, Award } from 'lucide-react';
 const features = [
     {
         icon: GraduationCap,
-        title: "35+ Cursos",
+        title: "38+ Cursos",
         description: "Conteúdo completo sobre DTM, Zumbido, Disfunções Oculomotoras e muito mais."
     },
     {

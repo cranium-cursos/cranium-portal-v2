@@ -104,6 +104,17 @@ export default function ClassLibrary() {
                         </motion.div>
                     ))}
                 </div>
+
+
+                <div className="mt-16 text-center">
+                    <p className="text-gray-400 mb-6 text-lg">Comece a transformar sua carreira hoje mesmo.</p>
+                    <a
+                        href="https://lp.craniumcursos.com.br/checkout/portal-cranium"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-black rounded-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]"
+                    >
+                        Desbloquear Biblioteca Completa
+                    </a>
+                </div>
             </div>
         </section>
     );

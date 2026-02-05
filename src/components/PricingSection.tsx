@@ -26,7 +26,7 @@ export default function PricingSection() {
                 </div>
 
                 {/* Pricing Card */}
-                <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+                <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl px-5 py-8 md:p-12 relative overflow-hidden shadow-2xl">
 
                     {/* Glow Effect */}
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-primary/10 blur-[100px] pointer-events-none" />
@@ -61,14 +61,14 @@ export default function PricingSection() {
                             </span>
                             <div className="mb-6">
                                 <p className="text-gray-400 text-sm mb-1">De <span className="line-through">R$ 997,00</span> por apenas:</p>
-                                <div className="flex items-baseline justify-center gap-1">
+                                <div className="flex items-baseline justify-center gap-1 whitespace-nowrap">
                                     <span className="text-2xl text-gray-400">12x</span>
-                                    <span className="text-5xl font-bold text-white">R$ 39,70</span>
+                                    <span className="text-4xl md:text-5xl font-bold text-white">R$ 39,70</span>
                                 </div>
                                 <p className="text-gray-500 text-xs mt-2">ou R$ 397,00 à vista</p>
                             </div>
 
-                            <a href="https://lp.craniumcursos.com.br/checkout/portal-cranium" className="block w-full py-4 bg-white text-black rounded-xl font-bold hover:bg-gray-200 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)] mb-4">
+                            <a href="https://lp.craniumcursos.com.br/checkout/portal-cranium" className="block w-full py-4 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-black rounded-xl font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)] mb-4">
                                 QUERO ACESSO IMEDIATO
                             </a>
 

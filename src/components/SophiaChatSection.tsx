@@ -119,9 +119,12 @@ export default function SophiaChatSection() {
                         ))}
                     </ul>
 
-                    <button className="mt-10 px-8 py-4 bg-white text-black rounded-lg font-bold hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                        Testar SophIA Agora
-                    </button>
+                    <div className="mt-10">
+                        <p className="text-gray-400 mb-4 text-sm">Toque no botão abaixo para desbloquear seu acesso à SophIA.</p>
+                        <a href="https://lp.craniumcursos.com.br/checkout/portal-cranium" className="inline-block px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-black rounded-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]">
+                            Quero Acesso à SophIA
+                        </a>
+                    </div>
                 </motion.div>
 
             </div>

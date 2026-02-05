@@ -148,6 +148,14 @@ export default function EncyclopediaSection() {
                     </motion.div>
 
                 </div>
+                <div className="mt-16 text-center">
+                    <a
+                        href="https://lp.craniumcursos.com.br/checkout/portal-cranium"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-black rounded-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]"
+                    >
+                        Acessar Todo o Acervo Agora
+                    </a>
+                </div>
             </div>
         </section>
     );
