@@ -35,11 +35,13 @@ export const cefaleiaCourses: Course[] = [
 import dtmBruxismoImg from '../assets/courses/dtm-bruxismo.jpg';
 import dtmConceitosMuscularImg from '../assets/courses/dtm-conceitos-muscular.jpg';
 import dtmBasesImg from '../assets/courses/dtm-bases.jpg';
+import dtmDiagnosticoImagemImg from '../assets/courses/dtm-diagnostico-imagem.jpg';
 
 export const dtmCourses: Course[] = [
     { title: "Bruxismo", category: "DTM", image: dtmBruxismoImg, duration: "4hs" },
     { title: "Conceitos da DTM Muscular", category: "DTM", image: dtmConceitosMuscularImg, duration: "4hs" },
     { title: "Bases das Disfunções Temporomandibulares", category: "DTM", image: dtmBasesImg, duration: "4hs" },
+    { title: "Diagnóstico por Imagem da ATM", category: "DTM", image: dtmDiagnosticoImagemImg, duration: "4hs" },
 ];
 
 export const zumbidoCourses: Course[] = [

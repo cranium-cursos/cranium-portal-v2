@@ -28,14 +28,14 @@ export default function Hero() {
                         </span>
                     </div>
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-                        Domine a Fisioterapia de <br />
+                        38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial  <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10C1B4] to-[#0D8C86] pb-2">
-                            Cabeça e Pescoço
+                            por apenas R$39,70/ mês
                         </span>
                     </h1>
                     <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-xl">
-                        Do Diagnóstico à Alta. A única plataforma que reúne as 6 grandes áreas de atuação,
-                        IA especializada e uma comunidade de elite. Tudo em um só lugar.
+                        Aprenda a atuar nas áreas nas áreas de dores de cabeças, DTM, zumbido, vertigens, cervical e disfunção oculomotora e tenha acesso à nossa IA especializada.
+
                     </p>
 
                     <div className="flex flex-wrap gap-4">
