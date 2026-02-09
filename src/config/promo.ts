@@ -1,4 +1,4 @@
-export const PROMO_START = new Date('2026-02-10T00:00:00-03:00');
+export const PROMO_START = new Date('2026-02-10T18:00:00-03:00');
 export const PROMO_END = new Date('2026-02-14T00:00:00-03:00');
 
 export const CHECKOUT_URL = 'https://lp.craniumcursos.com.br/checkout/portal-cranium';

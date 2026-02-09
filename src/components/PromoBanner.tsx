@@ -13,8 +13,8 @@ export default function PromoBanner() {
             <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-center gap-3 text-xs sm:text-sm font-medium relative">
                 <Gift className="w-4 h-4 flex-none hidden sm:block" aria-hidden="true" />
                 <span className="text-center">
-                    <strong>BÔNUS EXCLUSIVO 10-13 FEV:</strong>{' '}
-                    <span className="hidden sm:inline">Assine e ganhe o curso Técnicas Miofasciais (R$297) </span>
+                    <strong>BÔNUS EXCLUSIVO:</strong>{' '}
+                    Assine e ganhe o curso Técnicas Miofasciais (R$297){' '}
                     <strong>GRÁTIS</strong>
                     <span className="mx-2">|</span>
                     <span className="font-mono font-bold">{formatCountdown(time)}</span>

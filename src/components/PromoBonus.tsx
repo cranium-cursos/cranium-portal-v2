@@ -41,7 +41,7 @@ export default function PromoBonus() {
                             <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 rounded-full mb-4">
                                 <Gift className="w-4 h-4 text-amber-400" aria-hidden="true" />
                                 <span className="text-amber-400 text-xs font-bold uppercase tracking-wider">
-                                    Bônus exclusivo 10-13 Fev
+                                    Bônus exclusivo por tempo limitado
                                 </span>
                             </div>
 

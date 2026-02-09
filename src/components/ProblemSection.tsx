@@ -17,7 +17,7 @@ export default function ProblemSection() {
                     </div>
 
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-                        Você sente segurança para tratar um paciente com <span className="text-red-500">zumbido somático</span> hoje?
+                        Você sente segurança para tratar um paciente com <span className="text-red-500">zumbido somatossensorial</span> hoje?
                     </h2>
 
                     <p className="text-xl text-gray-400 mb-12 leading-relaxed">
