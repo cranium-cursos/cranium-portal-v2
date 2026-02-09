@@ -12,12 +12,24 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-@layer utilities {
-  .text-glow {
-    text-shadow: 0 0 10px rgba(16, 193, 180, 0.8), 0 0 20px rgba(16, 193, 180, 0.4);
-  }
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #10C1B4;
+  outline-offset: 2px;
+}
 
-  .neon-border {
-    box-shadow: 0 0 10px rgba(16, 193, 180, 0.5), inset 0 0 10px rgba(16, 193, 180, 0.2);
+/* Remove default outline for mouse clicks */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
+

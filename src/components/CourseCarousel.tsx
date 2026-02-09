@@ -23,24 +23,26 @@ export default function CourseCarousel({ title, courses }: CourseCarouselProps) 
         <div className="py-4 px-6 relative z-30 group/carousel">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2 group cursor-pointer w-fit">
                 {title}
-                <ChevronRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
+                <ChevronRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity text-primary" aria-hidden="true" />
             </h2>
 
             <div className="relative">
                 {/* Left Arrow - Hidden on Mobile */}
                 <button
                     onClick={() => scroll('left')}
+                    aria-label="Curso anterior"
                     className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-40 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm border border-white/10 opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-300 hidden md:flex items-center justify-center transform hover:scale-110"
                 >
-                    <ChevronLeft className="w-6 h-6" />
+                    <ChevronLeft className="w-6 h-6" aria-hidden="true" />
                 </button>
 
                 {/* Right Arrow - Hidden on Mobile */}
                 <button
                     onClick={() => scroll('right')}
+                    aria-label="Próximo curso"
                     className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-40 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm border border-white/10 opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-300 hidden md:flex items-center justify-center transform hover:scale-110"
                 >
-                    <ChevronRight className="w-6 h-6" />
+                    <ChevronRight className="w-6 h-6" aria-hidden="true" />
                 </button>
 
                 <div
@@ -59,6 +61,10 @@ export default function CourseCarousel({ title, courses }: CourseCarouselProps) 
                                 <img
                                     src={course.image}
                                     alt={course.title}
+                                    loading="lazy"
+                                    decoding="async"
+                                    width={260}
+                                    height={347}
                                     className="w-full h-full object-cover opacity-95 group-hover:opacity-100 transition-opacity duration-500"
                                 />
 

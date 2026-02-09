@@ -34,12 +34,12 @@ export default function PricingSection() {
                     <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
                         {/* Left: Value Stack */}
                         <div className="space-y-6">
-                            <h3 className="text-xml font-bold text-gray-400 uppercase tracking-wider mb-4">O que você recebe:</h3>
+                            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">O que você recebe:</h3>
                             <ul className="space-y-4">
                                 {deliverables.map((item, index) => (
                                     <li key={index} className="flex items-start gap-3">
                                         <div className="mt-1 bg-primary/20 p-1 rounded-full">
-                                            <Check className="w-4 h-4 text-primary" />
+                                            <Check className="w-4 h-4 text-primary" aria-hidden="true" />
                                         </div>
                                         <div>
                                             <p className="text-white font-medium">{item.name}</p>

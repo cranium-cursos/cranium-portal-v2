@@ -1,9 +1,11 @@
 import { Play, Info } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import heroBg from '../assets/hero-bg.png';
 
 export default function Hero() {
+    const shouldReduceMotion = useReducedMotion();
+
     return (
         <div className="relative min-h-[100dvh] w-full overflow-hidden flex flex-col">
             {/* Video Background Placeholder */}
@@ -16,9 +18,9 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-20 flex-1 flex flex-col justify-center px-4 md:px-12 lg:pr-32 max-w-7xl mx-auto pt-24 pb-32 md:pb-12">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+                    animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+                    transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.8 }}
                     className="max-w-3xl"
                 >
                     <div className="inline-block mb-6 px-4 py-2 border border-primary/30 bg-primary/10 backdrop-blur-md rounded-lg">
@@ -40,11 +42,11 @@ export default function Hero() {
 
                     <div className="flex flex-wrap gap-4">
                         <a href="https://lp.craniumcursos.com.br/checkout/portal-cranium" className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-black rounded-lg font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]">
-                            <Play className="fill-black w-5 h-5" />
+                            <Play className="fill-black w-5 h-5" aria-hidden="true" />
                             Desbloquear Acesso Completo
                         </a>
                         <a href="#precos" className="flex items-center gap-2 px-8 py-4 bg-gray-500/30 backdrop-blur-sm text-white rounded-lg font-bold hover:bg-gray-500/50 transition-colors">
-                            <Info className="w-5 h-5" />
+                            <Info className="w-5 h-5" aria-hidden="true" />
                             Ver Planos
                         </a>
                     </div>

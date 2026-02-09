@@ -1,13 +1,8 @@
 import { motion } from 'framer-motion';
 import { Bot, Send, User } from 'lucide-react';
-// import { useState } from 'react';
 import sophiaAvatar from '../assets/sophia-avatar.jpg';
 
 export default function SophiaChatSection() {
-    // const [messages, setMessages] = useState([
-    //     { type: 'user', text: "Tenho um paciente com zumbido pulsátil e cervicalgia. Por onde começo?" },
-    //     { type: 'ai', text: "Comece descartando causas vasculares para o zumbido pulsátil. Se a audiometria for normal, avalie a musculatura SCM e Masseter, pois pontos-gatilho podem mimetizar esse sintoma. No módulo de Zumbido Somático, aula 4, detalho esse diagnóstico diferencial." }
-    // ]);
 
     return (
         <section id="sophia" className="py-24 px-6 bg-[#050505] relative overflow-hidden">
@@ -21,13 +16,14 @@ export default function SophiaChatSection() {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
                     className="relative order-2 md:order-1"
                 >
                     <div className="bg-[#0A0A0A] border border-white/10 rounded-3xl p-6 md:p-8 max-w-md mx-auto relative shadow-2xl">
                         {/* Header with Avatar */}
                         <div className="flex items-center gap-4 mb-8 border-b border-white/5 pb-4">
                             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/30 shadow-[0_0_15px_rgba(16,193,180,0.3)]">
-                                <img src={sophiaAvatar} alt="SophIA" className="w-full h-full object-cover" />
+                                <img src={sophiaAvatar} alt="SophIA" loading="lazy" decoding="async" width={48} height={48} className="w-full h-full object-cover" />
                             </div>
                             <div>
                                 <h3 className="font-bold text-white flex items-center gap-2">
@@ -48,14 +44,14 @@ export default function SophiaChatSection() {
                                     Paciente com zumbido pulsátil e dor cervical. Qual a melhor abordagem inicial?
                                 </div>
                                 <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center flex-none">
-                                    <User className="w-4 h-4 text-white" />
+                                    <User className="w-4 h-4 text-white" aria-hidden="true" />
                                 </div>
                             </div>
 
                             {/* AI Message */}
                             <div className="flex gap-4">
                                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-none mt-2">
-                                    <Bot className="w-4 h-4 text-primary" />
+                                    <Bot className="w-4 h-4 text-primary" aria-hidden="true" />
                                 </div>
                                 <div className="space-y-2 max-w-[90%]">
                                     <div className="bg-primary/5 border border-primary/10 text-gray-200 p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed shadow-[0_0_20px_rgba(16,193,180,0.05)]">
@@ -77,7 +73,7 @@ export default function SophiaChatSection() {
                         <div className="mt-8 pt-4 border-t border-white/5 relative">
                             <div className="h-10 bg-black rounded-full border border-white/10 px-4 flex items-center justify-between opacity-50">
                                 <span className="text-gray-600 text-sm">Digite sua dúvida clínica...</span>
-                                <Send className="w-4 h-4 text-gray-600" />
+                                <Send className="w-4 h-4 text-gray-600" aria-hidden="true" />
                             </div>
                         </div>
                     </div>
@@ -88,6 +84,7 @@ export default function SophiaChatSection() {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
                     className="order-1 md:order-2"
                 >
                     <span className="text-primary font-bold tracking-widest text-sm uppercase mb-4 block">

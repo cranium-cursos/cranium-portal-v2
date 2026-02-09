@@ -54,7 +54,7 @@ export default function SolutionSection() {
                             className="p-8 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:border-primary/50 transition-colors group text-center"
                         >
                             <div className="w-16 h-16 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border border-primary/20 shadow-[0_0_15px_rgba(16,193,180,0.1)] group-hover:shadow-[0_0_20px_rgba(16,193,180,0.3)]">
-                                <feature.icon className="w-8 h-8 text-primary" />
+                                <feature.icon className="w-8 h-8 text-primary" aria-hidden="true" />
                             </div>
                             <h3 className="text-white font-bold text-xl mb-3">{feature.title}</h3>
                             <p className="text-gray-400">{feature.description}</p>

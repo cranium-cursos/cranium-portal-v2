@@ -34,36 +34,49 @@ export default function FAQSection() {
                 <h2 className="text-3xl font-bold text-white text-center mb-12">Perguntas Frequentes</h2>
 
                 <div className="space-y-4">
-                    {faqs.map((faq, index) => (
-                        <div key={index} className="border border-white/10 rounded-xl bg-[#0A0A0A] overflow-hidden">
-                            <button
-                                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                                className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
-                            >
-                                <span className="text-white font-medium pr-8">{faq.question}</span>
-                                {openIndex === index ? (
-                                    <Minus className="w-5 h-5 text-primary flex-shrink-0" />
-                                ) : (
-                                    <Plus className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                                )}
-                            </button>
+                    {faqs.map((faq, index) => {
+                        const isOpen = openIndex === index;
+                        const questionId = `faq-question-${index}`;
+                        const answerId = `faq-answer-${index}`;
+                        return (
+                            <div key={index} className="border border-white/10 rounded-xl bg-[#0A0A0A] overflow-hidden">
+                                <button
+                                    id={questionId}
+                                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                                    className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+                                    aria-expanded={isOpen}
+                                    aria-controls={answerId}
+                                >
+                                    <span className="text-white font-medium pr-8">{faq.question}</span>
+                                    {isOpen ? (
+                                        <Minus className="w-5 h-5 text-primary flex-shrink-0" aria-hidden="true" />
+                                    ) : (
+                                        <Plus className="w-5 h-5 text-gray-400 flex-shrink-0" aria-hidden="true" />
+                                    )}
+                                </button>
 
-                            <AnimatePresence>
-                                {openIndex === index && (
-                                    <motion.div
-                                        initial={{ height: 0, opacity: 0 }}
-                                        animate={{ height: "auto", opacity: 1 }}
-                                        exit={{ height: 0, opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                    >
-                                        <div className="px-6 pb-6 text-gray-400 leading-relaxed text-sm border-t border-white/5 pt-4">
-                                            {faq.answer}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
-                        </div>
-                    ))}
+                                <AnimatePresence>
+                                    {isOpen && (
+                                        <motion.div
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.3 }}
+                                        >
+                                            <div
+                                                id={answerId}
+                                                role="region"
+                                                aria-labelledby={questionId}
+                                                className="px-6 pb-6 text-gray-300 leading-relaxed text-sm border-t border-white/5 pt-4"
+                                            >
+                                                {faq.answer}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

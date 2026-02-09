@@ -77,12 +77,12 @@ export default function ClassLibrary() {
                             className="bg-gray-900/50 border border-white/5 rounded-xl p-4 hover:border-primary/30 transition-colors cursor-pointer group"
                         >
                             <div className="relative aspect-video bg-gray-800 rounded-lg mb-4 overflow-hidden">
-                                <img src={item.image} alt={item.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+                                <img src={item.image} alt={item.title} loading="lazy" decoding="async" width={400} height={225} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
-                                    <PlayCircle className="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform" />
+                                    <PlayCircle className="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform" aria-hidden="true" />
                                 </div>
                                 <span className="absolute bottom-2 right-2 flex items-center gap-1 text-xs font-bold text-white bg-black/60 px-2 py-1 rounded">
-                                    <Clock className="w-3 h-3" /> {item.duration}
+                                    <Clock className="w-3 h-3" aria-hidden="true" /> {item.duration}
                                 </span>
                             </div>
 
@@ -98,7 +98,7 @@ export default function ClassLibrary() {
                             <p className="text-xs text-gray-400 mb-3">{item.professor}</p>
 
                             <div className="flex items-center gap-2 text-gray-500 text-sm">
-                                <FileText className="w-4 h-4" />
+                                <FileText className="w-4 h-4" aria-hidden="true" />
                                 <span>Material Complementar Incluso</span>
                             </div>
                         </motion.div>

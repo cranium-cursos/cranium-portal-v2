@@ -12,7 +12,7 @@ export default function ProblemSection() {
                     viewport={{ once: true }}
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-red-400 font-bold text-sm mb-6">
-                        <AlertTriangle className="w-4 h-4" />
+                        <AlertTriangle className="w-4 h-4" aria-hidden="true" />
                         <span>O Mercado Mudou</span>
                     </div>
 
@@ -38,9 +38,9 @@ export default function ProblemSection() {
                             <div className="absolute inset-0 bg-primary/5 blur-xl" />
                             <h3 className="text-white font-bold text-lg mb-2 relative z-10">O Expert Cranium</h3>
                             <ul className="space-y-3 text-gray-300 relative z-10">
-                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" /> Domina as 6 grandes áreas</li>
-                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" /> Raciocínio clínico avançado</li>
-                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" /> Referência na sua região</li>
+                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" aria-hidden="true" /> Domina as 6 grandes áreas</li>
+                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" aria-hidden="true" /> Raciocínio clínico avançado</li>
+                                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary" aria-hidden="true" /> Referência na sua região</li>
                             </ul>
                         </div>
                     </div>
