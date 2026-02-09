@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { isPromoActive } from '../config/promo';
 import logoImg from '../assets/logo-portal.png';
 
 export default function Navbar() {
@@ -70,7 +71,8 @@ export default function Navbar() {
             role="navigation"
             aria-label="Menu principal"
             className={cn(
-                'fixed top-0 w-full z-50 transition-all duration-300 px-6 py-4',
+                'fixed w-full z-50 transition-all duration-300 px-6 py-4',
+                isPromoActive() ? 'top-10' : 'top-0',
                 isScrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
             )}
         >

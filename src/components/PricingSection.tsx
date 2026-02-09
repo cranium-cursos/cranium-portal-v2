@@ -1,4 +1,6 @@
-import { Check } from 'lucide-react';
+import { Check, Gift, Clock } from 'lucide-react';
+import { usePromoCountdown, formatCountdown } from '../hooks/usePromoCountdown';
+import tmfImg from '../assets/tmf.png';
 
 const deliverables = [
     { name: "Acesso a 38 cursos", value: "R$ 3.800,00" },
@@ -10,6 +12,8 @@ const deliverables = [
 ];
 
 export default function PricingSection() {
+    const { time, active: isPromoActive } = usePromoCountdown();
+
     return (
         <section id="precos" className="py-24 px-6 bg-gradient-to-b from-black to-[#050505] relative overflow-hidden">
             <div className="max-w-4xl mx-auto relative z-10">
@@ -48,6 +52,28 @@ export default function PricingSection() {
                                     </li>
                                 ))}
                             </ul>
+                            {/* Bonus Card - Promo */}
+                            {isPromoActive && (
+                                <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/30 rounded-2xl p-4 flex items-center gap-4">
+                                    <img src={tmfImg} alt="Técnicas Miofasciais" className="w-16 h-20 object-cover rounded-lg flex-none" />
+                                    <div className="flex-1 min-w-0">
+                                        <div className="flex items-center gap-1.5 mb-1">
+                                            <Gift className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
+                                            <span className="text-amber-400 text-[10px] font-bold uppercase tracking-wider">Bônus grátis</span>
+                                        </div>
+                                        <p className="text-white text-sm font-semibold leading-tight">Técnicas Miofasciais de Cabeça e Pescoço</p>
+                                        <div className="flex items-center gap-2 mt-1.5">
+                                            <span className="text-gray-500 line-through text-xs">R$ 297</span>
+                                            <span className="text-green-400 font-bold text-sm">R$ 0</span>
+                                            <span className="text-amber-400/70 text-[10px] flex items-center gap-1 ml-auto">
+                                                <Clock className="w-3 h-3" aria-hidden="true" />
+                                                {formatCountdown(time)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
                             <div className="pt-6 border-t border-white/10">
                                 <p className="text-gray-500 text-sm">Valor Total Entregue:</p>
                                 <p className="text-2xl font-bold text-gray-300 decoration-slice line-through decoration-red-500/50">R$ 7.291,00</p>
