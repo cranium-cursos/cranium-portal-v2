@@ -6,12 +6,10 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts: Inter (optimized - reduced weights, preload) -->
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <title>Portal Cranium | Educação em Cabeça e Pescoço</title>
   <meta name="description"
     content="38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial por apenas R$39,70/mês. Aprenda com os maiores especialistas do Brasil." />
@@ -49,7 +47,20 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSX3JBW" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div id="root"></div>
+  <div id="root">
+    <!-- Static hero shell for instant LCP (replaced by React on mount) -->
+    <div style="position:relative;min-height:100vh;width:100%;overflow:hidden;display:flex;flex-direction:column;background:#000">
+      <div style="position:absolute;inset:0;background:linear-gradient(to right,#000,rgba(0,0,0,0.5),transparent);z-index:10"></div>
+      <div style="position:relative;z-index:20;flex:1;display:flex;flex-direction:column;justify-content:center;padding:6rem 1rem 8rem;max-width:80rem;margin:0 auto">
+        <div style="max-width:48rem">
+          <h1 style="font-size:clamp(1.875rem,5vw,3.75rem);font-weight:800;color:#fff;margin-bottom:1.5rem;line-height:1.1">
+            38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial
+            <span style="color:#10C1B4"> por apenas R$39,70/ mês</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
