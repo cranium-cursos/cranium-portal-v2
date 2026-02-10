@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Bot, Send, User } from 'lucide-react';
-import sophiaAvatar from '../assets/sophia-avatar.jpg';
+import sophiaAvatar from '../assets/sophia-avatar.webp';
 
 export default function SophiaChatSection() {
 

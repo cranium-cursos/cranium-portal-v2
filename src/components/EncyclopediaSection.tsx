@@ -6,15 +6,15 @@ import { RotateCcw, Award, Users, Layout } from 'lucide-react';
 // ...
 
 // New Badge Images
-import badgeCefaleia from '../assets/courses/badge-cefaleia.jpg';
-import badgeVestibular from '../assets/courses/badge-vestibular.jpg';
-import badgeOculomotora from '../assets/courses/badge-oculomotora.jpg';
-import badgeCervical from '../assets/courses/badge-cervical.jpg';
-import badgeDtm from '../assets/courses/badge-dtm.jpg';
-import badgeGestao from '../assets/courses/badge-gestao.jpg';
-import badgeZumbido from '../assets/courses/badge-zumbido.jpg';
-import badgeBasicas from '../assets/courses/badge-basicas.jpg';
-import badgeCondicoes from '../assets/courses/badge-condicoes.jpg';
+import badgeCefaleia from '../assets/courses/badge-cefaleia.webp';
+import badgeVestibular from '../assets/courses/badge-vestibular.webp';
+import badgeOculomotora from '../assets/courses/badge-oculomotora.webp';
+import badgeCervical from '../assets/courses/badge-cervical.webp';
+import badgeDtm from '../assets/courses/badge-dtm.webp';
+import badgeGestao from '../assets/courses/badge-gestao.webp';
+import badgeZumbido from '../assets/courses/badge-zumbido.webp';
+import badgeBasicas from '../assets/courses/badge-basicas.webp';
+import badgeCondicoes from '../assets/courses/badge-condicoes.webp';
 
 import prof1 from '../assets/professors/prof-1.jpg';
 import prof2 from '../assets/professors/prof-2.jpg';

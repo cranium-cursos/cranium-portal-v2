@@ -6,10 +6,12 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter (optimized - reduced weights, preload) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <title>Portal Cranium | Educação em Cabeça e Pescoço</title>
   <meta name="description"
     content="38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial por apenas R$39,70/mês. Aprenda com os maiores especialistas do Brasil." />
@@ -29,15 +31,16 @@
   <meta property="twitter:description"
     content="38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial por apenas R$39,70/mês. Aprenda com os maiores especialistas do Brasil." />
   <meta property="twitter:image" content="https://portal.craniumcursos.com.br/og-image.png" />
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KSX3JBW');</script>
+  <!-- Google Tag Manager (deferred - loads after page interactive) -->
+  <script>window.addEventListener('load', function() {
+    setTimeout(function() {
+      var w=window,d=document,s='script',l='dataLayer',i='GTM-KSX3JBW';
+      w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    }, 2000);
+  });</script>
   <!-- End Google Tag Manager -->
 </head>
 

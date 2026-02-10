@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <img src={logoImg} alt="Portal Cranium" className="h-12 w-auto object-contain" />
+                    <img src={logoImg} alt="Portal Cranium" width={120} height={48} className="h-12 w-auto object-contain" />
                 </div>
 
                 {/* Desktop Menu */}

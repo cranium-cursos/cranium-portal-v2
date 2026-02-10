@@ -1,6 +1,6 @@
 import { Check, Gift, Clock } from 'lucide-react';
 import { usePromoCountdown, formatCountdown } from '../hooks/usePromoCountdown';
-import tmfImg from '../assets/tmf.png';
+import tmfImg from '../assets/tmf.webp';
 
 const deliverables = [
     { name: "Acesso a 38 cursos", value: "R$ 3.800,00" },

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Gift, Clock } from 'lucide-react';
 import { usePromoCountdown, formatCountdown } from '../hooks/usePromoCountdown';
 import { CHECKOUT_URL } from '../config/promo';
-import tmfImg from '../assets/tmf.png';
+import tmfImg from '../assets/tmf.webp';
 
 export default function PromoBonus() {
     const { time, active } = usePromoCountdown();
