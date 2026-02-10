@@ -1,28 +1,25 @@
 import { Play, Info } from 'lucide-react';
-import { motion, useReducedMotion } from 'framer-motion';
 
 import heroBg from '../assets/hero-bg.webp';
 
 export default function Hero() {
-    const shouldReduceMotion = useReducedMotion();
-
     return (
         <div className="relative min-h-[100dvh] w-full overflow-hidden flex flex-col">
-            {/* Video Background Placeholder */}
+            {/* Background Image */}
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent z-10" />
-            <div
-                className="absolute inset-0 bg-cover bg-center opacity-50"
-                style={{ backgroundImage: `url(${heroBg})` }}
+            <img
+                src={heroBg}
+                alt=""
+                fetchPriority="high"
+                decoding="sync"
+                width={1024}
+                height={1024}
+                className="absolute inset-0 w-full h-full object-cover opacity-50"
             />
 
             {/* Content */}
             <div className="relative z-20 flex-1 flex flex-col justify-center px-4 md:px-12 lg:pr-32 max-w-7xl mx-auto pt-24 pb-32 md:pb-12">
-                <motion.div
-                    initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
-                    animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
-                    transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.8 }}
-                    className="max-w-3xl"
-                >
+                <div className="max-w-3xl">
                     <div className="inline-block mb-6 px-4 py-2 border border-primary/30 bg-primary/10 backdrop-blur-md rounded-lg">
                         <span className="text-primary font-mono tracking-widest text-xs uppercase flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -50,7 +47,7 @@ export default function Hero() {
                             Ver Planos
                         </a>
                     </div>
-                </motion.div>
+                </div>
             </div>
 
             {/* Bottom Gradient */}
