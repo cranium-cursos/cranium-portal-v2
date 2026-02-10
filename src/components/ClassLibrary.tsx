@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { PlayCircle, Clock, FileText } from 'lucide-react';
 
-import thumb154 from '../assets/classes/aula-154-toxina.jpg';
-import thumb163 from '../assets/classes/aula-163-cicatrizacao.jpg';
-import thumb165 from '../assets/classes/aula-165-neuromodulacao.jpg';
-import thumb148 from '../assets/classes/aula-148-dtm-convergencia.jpg';
-import thumb166 from '../assets/classes/aula-166-precificar.jpg';
-import thumb170 from '../assets/classes/aula-170-dc-tmd.jpg';
+import thumb154 from '../assets/classes/aula-154-toxina.webp';
+import thumb163 from '../assets/classes/aula-163-cicatrizacao.webp';
+import thumb165 from '../assets/classes/aula-165-neuromodulacao.webp';
+import thumb148 from '../assets/classes/aula-148-dtm-convergencia.webp';
+import thumb166 from '../assets/classes/aula-166-precificar.webp';
+import thumb170 from '../assets/classes/aula-170-dc-tmd.webp';
 
 const classes = [
     {

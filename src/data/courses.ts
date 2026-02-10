@@ -1,18 +1,18 @@
 
-import criseEnxaquecaImg from '../assets/courses/crise-enxaqueca.jpg';
-import guiaCefaleiaImg from '../assets/courses/guia-cefaleia.jpg';
-import workshopCefaleiaImg from '../assets/courses/workshop-cefaleia.jpg';
-import entendendoEnxaquecaImg from '../assets/courses/entendendo-enxaqueca.jpg';
-import cefaleiaCervicogenicaImg from '../assets/courses/cefaleia-cervicogenica.jpg';
-import tratamentoMedicamentosoPriscilaImg from '../assets/courses/tratamento-medicamentoso-priscila.jpg';
-import classificacaoNasossinusalImg from '../assets/courses/classificacao-nasossinusal.jpg';
-import reabilitacaoVestibularImg from '../assets/courses/reabilitacao-vestibular-hipofuncoes.jpg';
-import doencaMeniereImg from '../assets/courses/doenca-meniere.jpg';
-import avaliacaoInstrumentalImg from '../assets/courses/avaliacao-instrumental.jpg';
-import avaliacaoVppbImg from '../assets/courses/avaliacao-vppb.jpg';
-import zumbidoAnatomiaImg from '../assets/courses/zumbido-anatomia.jpg';
-import zumbidoTensImg from '../assets/courses/zumbido-tens.jpg';
-import zumbidoExamesImg from '../assets/courses/zumbido-exames.jpg';
+import criseEnxaquecaImg from '../assets/courses/crise-enxaqueca.webp';
+import guiaCefaleiaImg from '../assets/courses/guia-cefaleia.webp';
+import workshopCefaleiaImg from '../assets/courses/workshop-cefaleia.webp';
+import entendendoEnxaquecaImg from '../assets/courses/entendendo-enxaqueca.webp';
+import cefaleiaCervicogenicaImg from '../assets/courses/cefaleia-cervicogenica.webp';
+import tratamentoMedicamentosoPriscilaImg from '../assets/courses/tratamento-medicamentoso-priscila.webp';
+import classificacaoNasossinusalImg from '../assets/courses/classificacao-nasossinusal.webp';
+import reabilitacaoVestibularImg from '../assets/courses/reabilitacao-vestibular-hipofuncoes.webp';
+import doencaMeniereImg from '../assets/courses/doenca-meniere.webp';
+import avaliacaoInstrumentalImg from '../assets/courses/avaliacao-instrumental.webp';
+import avaliacaoVppbImg from '../assets/courses/avaliacao-vppb.webp';
+import zumbidoAnatomiaImg from '../assets/courses/zumbido-anatomia.webp';
+import zumbidoTensImg from '../assets/courses/zumbido-tens.webp';
+import zumbidoExamesImg from '../assets/courses/zumbido-exames.webp';
 
 export interface Course {
     title: string;
@@ -32,10 +32,10 @@ export const cefaleiaCourses: Course[] = [
     { title: "Classificação e Diagnóstico", category: "Cefaleia", image: classificacaoNasossinusalImg, duration: "4hs" },
 ];
 
-import dtmBruxismoImg from '../assets/courses/dtm-bruxismo.jpg';
-import dtmConceitosMuscularImg from '../assets/courses/dtm-conceitos-muscular.jpg';
-import dtmBasesImg from '../assets/courses/dtm-bases.jpg';
-import dtmDiagnosticoImagemImg from '../assets/courses/dtm-diagnostico-imagem.jpg';
+import dtmBruxismoImg from '../assets/courses/dtm-bruxismo.webp';
+import dtmConceitosMuscularImg from '../assets/courses/dtm-conceitos-muscular.webp';
+import dtmBasesImg from '../assets/courses/dtm-bases.webp';
+import dtmDiagnosticoImagemImg from '../assets/courses/dtm-diagnostico-imagem.webp';
 
 export const dtmCourses: Course[] = [
     { title: "Bruxismo", category: "DTM", image: dtmBruxismoImg, duration: "4hs" },
@@ -50,10 +50,10 @@ export const zumbidoCourses: Course[] = [
     { title: "Zumbido: Exames Complementares", category: "Zumbido", image: zumbidoExamesImg, duration: "4hs" },
 ];
 
-import cervicalLesoesTraumaticasImg from '../assets/courses/cervical-lesoes-traumaticas.jpg';
-import cervicalHerniaDiscoImg from '../assets/courses/cervical-hernia-disco.jpg';
-import cervicalFundamentosImg from '../assets/courses/cervical-fundamentos.jpg';
-import cervicalDorCronicaImg from '../assets/courses/cervical-dor-cronica.jpg';
+import cervicalLesoesTraumaticasImg from '../assets/courses/cervical-lesoes-traumaticas.webp';
+import cervicalHerniaDiscoImg from '../assets/courses/cervical-hernia-disco.webp';
+import cervicalFundamentosImg from '../assets/courses/cervical-fundamentos.webp';
+import cervicalDorCronicaImg from '../assets/courses/cervical-dor-cronica.webp';
 
 export const cervicalCourses: Course[] = [
     { title: "Lesões Traumáticas da Coluna Cervical", category: "Cervical", image: cervicalLesoesTraumaticasImg, duration: "4hs" },
@@ -62,8 +62,8 @@ export const cervicalCourses: Course[] = [
     { title: "Dor Cervical Crônica", category: "Cervical", image: cervicalDorCronicaImg, duration: "4hs" },
 ];
 
-import oculomotoraTonturasImg from '../assets/courses/oculomotora-tonturas.jpg';
-import oculomotoraConceitosImg from '../assets/courses/oculomotora-conceitos.jpg';
+import oculomotoraTonturasImg from '../assets/courses/oculomotora-tonturas.webp';
+import oculomotoraConceitosImg from '../assets/courses/oculomotora-conceitos.webp';
 
 export const oculomotoraCourses: Course[] = [
     { title: "Relação das Tonturas Cervicogênicas com as Disfunções Oculomotoras", category: "Oculomotora", image: oculomotoraTonturasImg, duration: "4hs" },
@@ -77,11 +77,11 @@ export const vestibularCourses: Course[] = [
     { title: "Avaliação Instrumental Vestibulopata", category: "Vestibular", image: avaliacaoInstrumentalImg, duration: "4hs" },
 ];
 
-import basicAnatomiaImg from '../assets/courses/basic-anatomia.jpg';
-import basicCinesiologiaImg from '../assets/courses/basic-cinesiologia.jpg';
-import basicPbeImg from '../assets/courses/basic-pbe.jpg';
-import basicSonoImg from '../assets/courses/basic-sono.jpg';
-import basicEletroterapiaImg from '../assets/courses/basic-eletroterapia.jpg';
+import basicAnatomiaImg from '../assets/courses/basic-anatomia.webp';
+import basicCinesiologiaImg from '../assets/courses/basic-cinesiologia.webp';
+import basicPbeImg from '../assets/courses/basic-pbe.webp';
+import basicSonoImg from '../assets/courses/basic-sono.webp';
+import basicEletroterapiaImg from '../assets/courses/basic-eletroterapia.webp';
 
 export const basicCourses: Course[] = [
     { title: "Anatomia da Cabeça", category: "Matérias Básicas", image: basicAnatomiaImg, duration: "4hs" },
@@ -91,10 +91,10 @@ export const basicCourses: Course[] = [
     { title: "Eletroterapia Aplicada à Analgesia", category: "Matérias Básicas", image: basicEletroterapiaImg, duration: "4hs" },
 ];
 
-import managementGestaoImg from '../assets/courses/management-gestao-encantamento.jpg';
-import managementVendasImg from '../assets/courses/management-vendas-alto-valor-new.jpg';
-import managementMarketingImg from '../assets/courses/management-marketing.jpg';
-import managementIaImg from '../assets/courses/management-ia.jpg';
+import managementGestaoImg from '../assets/courses/management-gestao-encantamento.webp';
+import managementVendasImg from '../assets/courses/management-vendas-alto-valor-new.webp';
+import managementMarketingImg from '../assets/courses/management-marketing.webp';
+import managementIaImg from '../assets/courses/management-ia.webp';
 
 export const managementCourses: Course[] = [
     { title: "Gestão e Encantamento do Consultório ao Paciente", category: "Gestão e Marketing", image: managementGestaoImg, duration: "4hs" },
@@ -103,9 +103,9 @@ export const managementCourses: Course[] = [
     { title: "Workshop Inteligência Artificial", category: "Gestão e Marketing", image: managementIaImg, duration: "4hs" },
 ];
 
-import relatedParalisiaImg from '../assets/courses/related-paralisia.jpg';
-import relatedOrtognaticaImg from '../assets/courses/related-ortognatica.jpg';
-import relatedTorcicoloImg from '../assets/courses/related-torcicolo.jpg';
+import relatedParalisiaImg from '../assets/courses/related-paralisia.webp';
+import relatedOrtognaticaImg from '../assets/courses/related-ortognatica.webp';
+import relatedTorcicoloImg from '../assets/courses/related-torcicolo.webp';
 
 export const relatedCourses: Course[] = [
     { title: "Paralisia Facial", category: "Condições Relacionadas", image: relatedParalisiaImg, duration: "4hs" },
