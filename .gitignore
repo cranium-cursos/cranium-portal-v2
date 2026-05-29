@@ -47,3 +47,10 @@ Thumbs.db
 .aios-core/local/
 .claude/settings.local.json
 .aios/install-log.txt
+
+# Claude Code local
+.claude/logs/
+.claude/worktrees/
+
+# Apex visual QA outputs
+.visual-check/

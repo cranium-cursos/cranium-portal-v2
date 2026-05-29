@@ -1,58 +1,51 @@
 import { lazy, Suspense } from 'react';
-import PromoBanner from './components/PromoBanner';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
-const EncyclopediaSection = lazy(() => import('./components/EncyclopediaSection'));
-const ProblemSection = lazy(() => import('./components/ProblemSection'));
-const CoursesSection = lazy(() => import('./components/CoursesSection'));
-const SolutionSection = lazy(() => import('./components/SolutionSection'));
-const ClassLibrary = lazy(() => import('./components/ClassLibrary'));
-const SophiaChatSection = lazy(() => import('./components/SophiaChatSection'));
-const PromoBonus = lazy(() => import('./components/PromoBonus'));
-const PricingSection = lazy(() => import('./components/PricingSection'));
-const FAQSection = lazy(() => import('./components/FAQSection'));
-
-import logoImg from './assets/logo-portal.png';
+// Lazy load — campanhas só carregam quando rotas forem acessadas
+const NiverSamuel = lazy(() => import('./pages/NiverSamuel'));
+const PortalNiver = lazy(() => import('./pages/PortalNiver'));
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-white font-sans selection:bg-primary/30">
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-black focus:rounded-lg focus:font-bold">
-        Pular para o conteudo principal
-      </a>
-      <PromoBanner />
-      <Navbar />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/niver-samuel"
+          element={
+            <Suspense fallback={<RouteFallback />}>
+              <NiverSamuel />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/portal-niver"
+          element={
+            <Suspense fallback={<RouteFallback />}>
+              <PortalNiver />
+            </Suspense>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-      <main id="main-content">
-        <Hero />
-
-        <Suspense fallback={null}>
-          <EncyclopediaSection />
-
-          <ProblemSection />
-
-          <CoursesSection />
-
-          <SolutionSection />
-
-          <ClassLibrary />
-
-          <SophiaChatSection />
-
-          <PromoBonus />
-          <PricingSection />
-          <FAQSection />
-        </Suspense>
-
-      </main>
-
-      <footer className="py-12 border-t border-white/10 bg-black">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center gap-6">
-          <img src={logoImg} alt="Portal Cranium" loading="lazy" decoding="async" width={160} height={40} className="h-10 w-auto opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all" />
-          <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Portal Cranium. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+/**
+ * Fallback simples enquanto a rota lazy carrega.
+ * Mantém background dark do brandbook + Plus Jakarta Sans.
+ */
+function RouteFallback() {
+  return (
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="flex items-center gap-3 text-gray-400">
+        <span
+          className="w-2 h-2 rounded-full bg-cranium-turquesa animate-pulse"
+          aria-hidden="true"
+        />
+        <span className="text-sm">Carregando…</span>
+      </div>
     </div>
   );
 }

@@ -22,7 +22,8 @@ export default {
                 "intermediario": "#0D8C86", // Deep teal for strong gradient contrast
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                display: ['Plus Jakarta Sans', 'sans-serif'],
             },
             keyframes: {
                 scroll: {
