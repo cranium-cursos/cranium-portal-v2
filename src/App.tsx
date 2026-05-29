@@ -27,6 +27,7 @@ function App() {
             </Suspense>
           }
         />
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );
