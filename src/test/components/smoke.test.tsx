@@ -137,7 +137,7 @@ describe('Smoke Tests - Todos os componentes renderizam sem erro', () => {
 
   it('PricingSection mostra os deliverables', () => {
     const { getByText } = render(<PricingSection />);
-    expect(getByText('Acesso a 38 cursos')).toBeInTheDocument();
+    expect(getByText('Acesso a 41 cursos')).toBeInTheDocument();
     expect(getByText('SophIA (sua mentora especialista)')).toBeInTheDocument();
   });
 

@@ -4,7 +4,7 @@ import { Layers, Video, Brain, Award } from 'lucide-react';
 const features = [
     {
         icon: Layers,
-        title: "38+ Cursos Completos",
+        title: "41+ Cursos Completos",
         description: "Do básico ao avançado. Certificados inclusos em todos os cursos."
     },
     {

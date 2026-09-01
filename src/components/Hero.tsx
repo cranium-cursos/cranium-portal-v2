@@ -27,7 +27,7 @@ export default function Hero() {
                         </span>
                     </div>
                     <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight pr-6 md:pr-4">
-                        38 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial{' '}
+                        41 Cursos de Fisioterapia em cabeça e pescoço e Inteligência Artificial{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10C1B4] to-[#0D8C86] pb-2">
                             por apenas <span className="whitespace-nowrap">R$39,70/ mês</span>
                         </span>

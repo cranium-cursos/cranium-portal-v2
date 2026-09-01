@@ -54,20 +54,24 @@ import cervicalLesoesTraumaticasImg from '../assets/courses/cervical-lesoes-trau
 import cervicalHerniaDiscoImg from '../assets/courses/cervical-hernia-disco.webp';
 import cervicalFundamentosImg from '../assets/courses/cervical-fundamentos.webp';
 import cervicalDorCronicaImg from '../assets/courses/cervical-dor-cronica.webp';
+import cervicalDiagnosticoImagemImg from '../assets/courses/cervical-diagnostico-imagem.webp';
 
 export const cervicalCourses: Course[] = [
     { title: "Lesões Traumáticas da Coluna Cervical", category: "Cervical", image: cervicalLesoesTraumaticasImg, duration: "4hs" },
     { title: "Hérnia de Disco Cervical", category: "Cervical", image: cervicalHerniaDiscoImg, duration: "4hs" },
     { title: "Fundamentos da Avaliação e Tratamento das Dores Cervicais", category: "Cervical", image: cervicalFundamentosImg, duration: "4hs" },
     { title: "Dor Cervical Crônica", category: "Cervical", image: cervicalDorCronicaImg, duration: "4hs" },
+    { title: "Diagnóstico por Imagem Cervical", category: "Cervical", image: cervicalDiagnosticoImagemImg, duration: "4hs" },
 ];
 
 import oculomotoraTonturasImg from '../assets/courses/oculomotora-tonturas.webp';
 import oculomotoraConceitosImg from '../assets/courses/oculomotora-conceitos.webp';
+import oculomotoraAvaliacaoImg from '../assets/courses/oculomotora-avaliacao.webp';
 
 export const oculomotoraCourses: Course[] = [
     { title: "Relação das Tonturas Cervicogênicas com as Disfunções Oculomotoras", category: "Oculomotora", image: oculomotoraTonturasImg, duration: "4hs" },
     { title: "Conceitos Básicos da Fisioterapia Ocular", category: "Oculomotora", image: oculomotoraConceitosImg, duration: "4hs" },
+    { title: "Avaliação nas Disfunções Oculomotoras", category: "Oculomotora", image: oculomotoraAvaliacaoImg, duration: "4hs" },
 ];
 
 export const vestibularCourses: Course[] = [
@@ -82,6 +86,8 @@ import basicCinesiologiaImg from '../assets/courses/basic-cinesiologia.webp';
 import basicPbeImg from '../assets/courses/basic-pbe.webp';
 import basicSonoImg from '../assets/courses/basic-sono.webp';
 import basicEletroterapiaImg from '../assets/courses/basic-eletroterapia.webp';
+import basicAutonomicoImg from '../assets/courses/basic-autonomico.webp';
+import basicDryNeedlingImg from '../assets/courses/basic-dry-needling.webp';
 
 export const basicCourses: Course[] = [
     { title: "Anatomia da Cabeça", category: "Matérias Básicas", image: basicAnatomiaImg, duration: "4hs" },
@@ -89,6 +95,8 @@ export const basicCourses: Course[] = [
     { title: "Prática Baseada em Evidências", category: "Matérias Básicas", image: basicPbeImg, duration: "4hs" },
     { title: "Sono e Relação com a Dor Orofacial", category: "Matérias Básicas", image: basicSonoImg, duration: "4hs" },
     { title: "Eletroterapia Aplicada à Analgesia", category: "Matérias Básicas", image: basicEletroterapiaImg, duration: "4hs" },
+    { title: "Sistema Nervoso Autonômico", category: "Matérias Básicas", image: basicAutonomicoImg, duration: "4hs" },
+    { title: "Dry Needling", category: "Matérias Básicas", image: basicDryNeedlingImg, duration: "4hs" },
 ];
 
 import managementGestaoImg from '../assets/courses/management-gestao-encantamento.webp';
@@ -106,11 +114,13 @@ export const managementCourses: Course[] = [
 import relatedParalisiaImg from '../assets/courses/related-paralisia.webp';
 import relatedOrtognaticaImg from '../assets/courses/related-ortognatica.webp';
 import relatedTorcicoloImg from '../assets/courses/related-torcicolo.webp';
+import relatedOncologicoCcpImg from '../assets/courses/related-oncologico-ccp.webp';
 
 export const relatedCourses: Course[] = [
     { title: "Paralisia Facial", category: "Condições Relacionadas", image: relatedParalisiaImg, duration: "4hs" },
     { title: "Reabilitação Pós Operatória de Cirurgia Ortognática e Bucomaxilofaciais", category: "Condições Relacionadas", image: relatedOrtognaticaImg, duration: "4hs" },
     { title: "Torcicolo Muscular Congênito", category: "Condições Relacionadas", image: relatedTorcicoloImg, duration: "4hs" },
+    { title: "Reabilitação Funcional Pós-tratamento Oncológico em Cabeça e Pescoço", category: "Condições Relacionadas", image: relatedOncologicoCcpImg, duration: "4hs" },
 ];
 
 

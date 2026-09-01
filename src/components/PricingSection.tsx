@@ -3,7 +3,7 @@ import { usePromoCountdown, formatCountdown } from '../hooks/usePromoCountdown';
 import tmfImg from '../assets/tmf.webp';
 
 const deliverables = [
-    { name: "Acesso a 38 cursos", value: "R$ 3.800,00" },
+    { name: "Acesso a 41 cursos", value: "R$ 4.100,00" },
     { name: "+ de 170 Aulas gravadas", value: "R$ 997,00" },
     { name: "Certificado em todos os cursos", value: "Inestimável" },
     { name: "1 curso novo todo mês", value: "R$ 997,00/ano" },
