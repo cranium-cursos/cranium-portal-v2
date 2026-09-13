@@ -72,7 +72,7 @@ export default function EncyclopediaSection() {
                                 <Layout className="w-5 h-5" aria-hidden="true" />
                                 <span>Experiência Netflix</span>
                             </div>
-                            <h3 className="text-3xl font-bold text-white mb-4">170+ Aulas e 38+ Cursos</h3>
+                            <h3 className="text-3xl font-bold text-white mb-4">170+ Aulas e 41+ Cursos</h3>
                             <p className="text-gray-400 max-w-md mb-6">
                                 Uma verdadeira imersão. Trilhas de aprendizado organizadas em ordem lógica,
                                 cobrindo desde a anatomia até os casos clínicos mais complexos.
