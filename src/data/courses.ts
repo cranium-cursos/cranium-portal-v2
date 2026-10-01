@@ -49,7 +49,7 @@ export const zumbidoCourses: Course[] = [
     { title: "Zumbido: Anatomia, Fisiopatologia e Avaliação", category: "Zumbido", image: zumbidoAnatomiaImg, duration: "4hs" },
     { title: "TENS no Tratamento do Zumbido", category: "Zumbido", image: zumbidoTensImg, duration: "4hs" },
     { title: "Zumbido: Exames Complementares", category: "Zumbido", image: zumbidoExamesImg, duration: "4hs" },
-    { title: "Exercícios no Tratamento do Zumbido Somatossensorial", category: "Zumbido", image: zumbidoExerciciosImg, tag: "Novo", duration: "3hs" },
+    { title: "Exercícios no Tratamento do Zumbido Somatossensorial", category: "Zumbido", image: zumbidoExerciciosImg, tag: "Novo", duration: "4hs" },
 ];
 
 import cervicalLesoesTraumaticasImg from '../assets/courses/cervical-lesoes-traumaticas.webp';
