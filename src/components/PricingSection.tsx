@@ -3,7 +3,7 @@ import { usePromoCountdown, formatCountdown } from '../hooks/usePromoCountdown';
 import tmfImg from '../assets/tmf.webp';
 
 const deliverables = [
-    { name: "Acesso a 41 cursos", value: "R$ 4.100,00" },
+    { name: "Acesso a 43 cursos", value: "R$ 4.300,00" },
     { name: "+ de 170 Aulas gravadas", value: "R$ 997,00" },
     { name: "Certificado em todos os cursos", value: "Inestimável" },
     { name: "1 curso novo todo mês", value: "R$ 997,00/ano" },
@@ -76,7 +76,7 @@ export default function PricingSection() {
 
                             <div className="pt-6 border-t border-white/10">
                                 <p className="text-gray-500 text-sm">Valor Total Entregue:</p>
-                                <p className="text-2xl font-bold text-gray-300 decoration-slice line-through decoration-red-500/50">R$ 7.291,00</p>
+                                <p className="text-2xl font-bold text-gray-300 decoration-slice line-through decoration-red-500/50">R$ 7.791,00</p>
                             </div>
                         </div>
 

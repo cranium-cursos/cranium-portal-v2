@@ -13,6 +13,7 @@ import avaliacaoVppbImg from '../assets/courses/avaliacao-vppb.webp';
 import zumbidoAnatomiaImg from '../assets/courses/zumbido-anatomia.webp';
 import zumbidoTensImg from '../assets/courses/zumbido-tens.webp';
 import zumbidoExamesImg from '../assets/courses/zumbido-exames.webp';
+import zumbidoExerciciosImg from '../assets/courses/zumbido-exercicios-somatossensorial.webp';
 
 export interface Course {
     title: string;
@@ -48,6 +49,7 @@ export const zumbidoCourses: Course[] = [
     { title: "Zumbido: Anatomia, Fisiopatologia e Avaliação", category: "Zumbido", image: zumbidoAnatomiaImg, duration: "4hs" },
     { title: "TENS no Tratamento do Zumbido", category: "Zumbido", image: zumbidoTensImg, duration: "4hs" },
     { title: "Zumbido: Exames Complementares", category: "Zumbido", image: zumbidoExamesImg, duration: "4hs" },
+    { title: "Exercícios no Tratamento do Zumbido Somatossensorial", category: "Zumbido", image: zumbidoExerciciosImg, tag: "Novo", duration: "3hs" },
 ];
 
 import cervicalLesoesTraumaticasImg from '../assets/courses/cervical-lesoes-traumaticas.webp';
