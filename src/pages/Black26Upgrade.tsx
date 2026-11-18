@@ -63,6 +63,12 @@ export default function Black26Upgrade() {
       document.body.appendChild(script);
     }
 
+    /* upsell.js does not fill the decline link: send it to the closing page,
+     * keeping the Voomp token so the buyer can still come back. */
+    document
+      .getElementById("not-buy-link")
+      ?.setAttribute("href", `/black26/obrigado${window.location.search}`);
+
     return () => {
       document.title = previousTitle;
     };

@@ -7,6 +7,7 @@ const NiverSamuel = lazy(() => import('./pages/NiverSamuel'));
 const PortalNiver = lazy(() => import('./pages/PortalNiver'));
 const Black26 = lazy(() => import('./pages/Black26'));
 const Black26Upgrade = lazy(() => import('./pages/Black26Upgrade'));
+const Black26Obrigado = lazy(() => import('./pages/Black26Obrigado'));
 
 function App() {
   return (
@@ -42,6 +43,14 @@ function App() {
           element={
             <Suspense fallback={<RouteFallback />}>
               <Black26Upgrade />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/black26/obrigado"
+          element={
+            <Suspense fallback={<RouteFallback />}>
+              <Black26Obrigado />
             </Suspense>
           }
         />
