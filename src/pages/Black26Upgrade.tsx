@@ -41,6 +41,10 @@ const voompStyles = `
 .black26-voomp-link:hover { color: #12303A; }
 /* Voomp's upsell.css resets the margin of <main>; keep the column centered regardless. */
 .black26-upgrade-wrap { margin-left: auto !important; margin-right: auto !important; }
+/* It also restyles paragraphs (italic, another font); keep the page typography. */
+.black26-upgrade-wrap p, .black26-upgrade-wrap li, .black26-upgrade-wrap span, .black26-upgrade-wrap strong {
+  font-family: 'Plus Jakarta Sans', Inter, sans-serif !important; font-style: normal !important;
+}
 `;
 
 export default function Black26Upgrade() {
