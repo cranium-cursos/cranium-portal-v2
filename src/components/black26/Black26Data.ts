@@ -68,7 +68,18 @@ export const FAQ = [
     a: 'Sua assinatura continua igual, com a mesma data de renovação e o mesmo valor. Por já ser assinante, você paga R$ 697 e leva o CPF Online, o TMF e a imersão Além da Medicação. O Portal não entra na sua compra, e é por isso que o seu preço é menor.',
   },
   { q: 'Já tenho o CPF ou o TMF. Tem desconto?', a: 'O combo da Black tem preço único.' },
-  { q: 'Por quanto tempo tenho acesso?', a: 'Um ano de acesso a partir da compra.' },
+  {
+    q: 'Por quanto tempo tenho acesso?',
+    a: 'Um ano a partir da compra, para tudo o que entra na oferta.',
+  },
+  {
+    q: 'E quando terminar o meu ano de Portal Cranium?',
+    a: 'Você pode assinar o Portal Cranium por R$ 397 ao ano.',
+  },
+  {
+    q: 'Sou estudante de fisioterapia. Posso comprar?',
+    a: 'Pode. A oferta vale também para estudantes.',
+  },
   {
     q: 'O certificado do CPF é reconhecido?',
     a: 'Sim. São 80 horas, com certificado reconhecido pelo MEC e emitido pela Faculdade Anhanguera. Os cursos do Portal também têm certificado de conclusão.',
@@ -104,7 +115,7 @@ export const TESTIMONIALS: { quote: string; author?: string; role?: string }[] =
 export const FIRST_WEEK = [
   {
     when: 'Dias 1 a 3',
-    text: 'No CPF, assista aos módulos Introdução às Cefaleias e Red Flags. Você já passa a reconhecer o que é seu e o que precisa encaminhar.',
+    text: 'No CPF, comece pelos dois primeiros módulos, na ordem: Introdução às Cefaleias e Conceitos Fundamentais e Históricos.',
   },
   {
     when: 'Dia 4',
@@ -112,6 +123,6 @@ export const FIRST_WEEK = [
   },
   {
     when: 'Dias 5 a 7',
-    text: 'No CPF, entre no módulo de Avaliação e avalie o primeiro paciente com cefaleia seguindo o fluxograma.',
+    text: 'No CPF, siga para o terceiro módulo, Enxaqueca (Migrânea). Os 14 módulos foram organizados para serem feitos nessa sequência.',
   },
 ];

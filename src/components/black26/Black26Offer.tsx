@@ -180,7 +180,8 @@ export function Black26Hero({ expired }: { expired: boolean }) {
 
           <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-gray-300 lg:mx-0 lg:text-lg">
             CPF Online com certificado de 80h reconhecido pelo MEC, um ano de Portal Cranium, o
-            curso TMF e a imersão Além da Medicação em uma compra só.
+            curso Técnicas Miofasciais para Cabeça e Pescoço e a imersão Além da Medicação em uma
+            compra só.
           </p>
 
           <div className="mt-6 flex flex-col items-center gap-5 sm:flex-row sm:justify-center lg:justify-start">

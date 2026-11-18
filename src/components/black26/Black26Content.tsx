@@ -113,7 +113,7 @@ export function Black26Problem() {
 
 /* ── Products ───────────────────────────────────────────────── */
 
-const BONUSES = [
+const PORTAL_HIGHLIGHTS = [
   { src: bonusCervical, alt: 'Curso Fundamentos da Dor Cervical' },
   { src: bonusMarketing, alt: 'Workshop de Marketing e Comunicação' },
   { src: bonusSimposio, alt: 'III Simpósio Brasileiro de Fisioterapia nas Cefaleias' },
@@ -191,26 +191,6 @@ export function Black26Products() {
             'Metodologia IAT: Identificar o tipo de cefaleia, Avaliar com fluxograma de raciocínio clínico e Tratar com plano baseado em evidência',
             'Aulas práticas gravadas com três câmeras',
           ]}
-          extra={
-            <div className="mt-5 rounded-2xl bg-[#EEF4F5] p-4">
-              <p className={`mb-3 text-sm font-bold ${INK}`}>Inclusos na formação:</p>
-              <ul className="grid grid-cols-3 gap-3">
-                {BONUSES.map((bonus) => (
-                  <li key={bonus.alt}>
-                    <img
-                      src={bonus.src}
-                      alt=""
-                      width={375}
-                      height={500}
-                      loading="lazy"
-                      className="mb-2 aspect-[3/4] w-full rounded-xl object-cover shadow-md"
-                    />
-                    <p className={`text-xs font-semibold leading-snug ${INK_SOFT}`}>{bonus.alt}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          }
         />
 
         <ProductRow
@@ -227,6 +207,26 @@ export function Black26Products() {
             'Um curso novo e uma aula nova todo mês',
             'SophIA, a IA mentora do Portal, comunidade de alunos e certificados de conclusão',
           ]}
+          extra={
+            <div className="mt-5 rounded-2xl bg-[#EEF4F5] p-4">
+              <p className={`mb-3 text-sm font-bold ${INK}`}>Também estão no Portal Cranium:</p>
+              <ul className="grid grid-cols-3 gap-3">
+                {PORTAL_HIGHLIGHTS.map((bonus) => (
+                  <li key={bonus.alt}>
+                    <img
+                      src={bonus.src}
+                      alt=""
+                      width={375}
+                      height={500}
+                      loading="lazy"
+                      className="mb-2 aspect-[3/4] w-full rounded-xl object-cover shadow-md"
+                    />
+                    <p className={`text-xs font-semibold leading-snug ${INK_SOFT}`}>{bonus.alt}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          }
         />
 
         <ProductRow
@@ -289,9 +289,9 @@ export function Black26Samuel() {
           <Title center={false}>Samuel Lodovichi</Title>
           <div className={`space-y-4 text-lg leading-relaxed ${INK_SOFT}`}>
             <p>
-              Fisioterapeuta, mestre pela USP de Ribeirão Preto, pós-graduado pela UNICAMP e membro
-              da Sociedade Brasileira de Cefaleia. Atende pacientes com dor de cabeça todos os dias
-              em duas clínicas e ensina cefaleia para fisioterapeutas desde 2019.
+              Fisioterapeuta, mestre pela USP de Ribeirão Preto e membro da Sociedade Brasileira
+              de Cefaleia. Atende pacientes com dor de cabeça todos os dias em duas clínicas e
+              ensina cefaleia para fisioterapeutas desde 2019.
             </p>
             <p>
               Em novembro de 2026, a Cranium reuniu fisioterapeutas de 20 estados no Cranium
