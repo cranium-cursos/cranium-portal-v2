@@ -289,8 +289,8 @@ export function Black26Samuel() {
           <Title center={false}>Samuel Lodovichi</Title>
           <div className={`space-y-4 text-lg leading-relaxed ${INK_SOFT}`}>
             <p>
-              Fisioterapeuta, mestre pela USP de Ribeirão Preto e membro da Sociedade Brasileira
-              de Cefaleia. Atende pacientes com dor de cabeça todos os dias em duas clínicas e
+              Fisioterapeuta, mestre pela USP de Ribeirão Preto, com especialização pela Santa Casa
+              de São Paulo, e membro da Sociedade Brasileira de Cefaleia. Atende pacientes com dor de cabeça todos os dias em duas clínicas e
               ensina cefaleia para fisioterapeutas desde 2019.
             </p>
             <p>

@@ -25,13 +25,13 @@ export const DEADLINE_LABEL = 'domingo, 29/11, às 23h59';
 export const PRICE = {
   full: 'R$ 2.188',
   black: 'R$ 897',
-  installments: '12x de R$ 89,70', // TODO(marcelo): confirm in the Voomp checkout
+  installments: '12x de R$ 89,70',
 };
 
 export const PRICE_SUBSCRIBER = {
   full: 'R$ 1.791',
   black: 'R$ 697',
-  installments: '12x de R$ 69,70', // TODO(marcelo): confirm in the Voomp checkout
+  installments: '12x de R$ 69,70',
 };
 
 /* Voomp one-click upsell id (2-year upgrade, + R$ 300) */
