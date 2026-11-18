@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 // Lazy load — campanhas só carregam quando rotas forem acessadas
 const NiverSamuel = lazy(() => import('./pages/NiverSamuel'));
 const PortalNiver = lazy(() => import('./pages/PortalNiver'));
+const Black26 = lazy(() => import('./pages/Black26'));
+const Black26Upgrade = lazy(() => import('./pages/Black26Upgrade'));
 
 function App() {
   return (
@@ -24,6 +26,22 @@ function App() {
           element={
             <Suspense fallback={<RouteFallback />}>
               <PortalNiver />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/black26"
+          element={
+            <Suspense fallback={<RouteFallback />}>
+              <Black26 />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/black26/upgrade"
+          element={
+            <Suspense fallback={<RouteFallback />}>
+              <Black26Upgrade />
             </Suspense>
           }
         />
