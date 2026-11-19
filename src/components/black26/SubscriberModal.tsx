@@ -7,6 +7,7 @@ import {
   PRICE_SUBSCRIBER,
   SUBSCRIBER_WEBHOOK_URL,
   SUPPORT_WHATSAPP_URL,
+  withTracking,
 } from './Black26Data';
 
 type Status = 'idle' | 'loading' | 'confirmed' | 'not-found';
@@ -140,7 +141,7 @@ export default function SubscriberModal({ open, onClose }: SubscriberModalProps)
                   imersão Além da Medicação.
                 </p>
                 <a
-                  href={CHECKOUT_SUBSCRIBER_URL}
+                  href={withTracking(CHECKOUT_SUBSCRIBER_URL)}
                   className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[#10C1B4] px-5 text-center text-base font-extrabold text-[#04201D] transition-colors hover:bg-[#2BD9CC]"
                 >
                   Quero minha oferta de assinante

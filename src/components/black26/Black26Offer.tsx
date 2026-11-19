@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Check, Minus, ShieldCheck } from 'lucide-react';
 import {
   CHECKOUT_URL,
+  withTracking,
   DEADLINE_LABEL,
   PRICE,
   PRICE_SUBSCRIBER,
@@ -329,7 +330,7 @@ export function Black26Pricing({
               </span>
             ) : (
               <a
-                href={CHECKOUT_URL}
+                href={withTracking(CHECKOUT_URL)}
                 className="group flex min-h-[56px] items-center justify-center gap-2 rounded-xl bg-cranium-turquesa px-5 text-center text-base font-extrabold text-[#04201D] shadow-[0_8px_32px_rgba(16,193,180,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2BD9CC] active:translate-y-0"
               >
                 QUERO O COMBO BLACK

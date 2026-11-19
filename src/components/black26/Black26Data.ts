@@ -15,6 +15,19 @@ export const CHECKOUT_SUBSCRIBER_URL =
 export const SUBSCRIBER_WEBHOOK_URL =
   'https://hook.integrator.boost.space/f9rihb06pn63u04rqek9y4va9a6vxbgc';
 
+/* Ad attribution params carried from the landing page into the Voomp checkout, so the
+ * checkout pixel sets fbc (fbclid) and Voomp's sales report keeps the UTMs. */
+const TRACKING_PARAMS = /^(utm_[a-z]+|fbclid|gclid|src|sck)$/;
+
+export function withTracking(url: string): string {
+  if (typeof window === 'undefined') return url;
+  const target = new URL(url);
+  new URLSearchParams(window.location.search).forEach((value, key) => {
+    if (TRACKING_PARAMS.test(key) && !target.searchParams.has(key)) target.searchParams.set(key, value);
+  });
+  return target.toString();
+}
+
 export const SUPPORT_WHATSAPP_URL =
   'https://wa.me/5516993529012?text=Quero%20ajuda%20com%20a%20Black%20Cranium';
 
